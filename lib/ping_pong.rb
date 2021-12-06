@@ -13,6 +13,5 @@ def ping_pong(target_number)
       output_array.push(x)
     end
   end
-  puts output_array
   output_array
 end
