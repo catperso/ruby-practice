@@ -7,6 +7,12 @@ String.prepend(Module.new do
     split_array.each do |letter|
       if letter.upcase.eql?('E')
         output_array.push('3')
+      elsif letter.upcase.eql?('A')
+        output_array.push('4')
+      elsif letter.upcase.eql?('L')
+        output_array.push('1')
+      elsif letter.upcase.eql?('O')
+        output_array.push('0')
       else
         output_array.push(letter)
       end
