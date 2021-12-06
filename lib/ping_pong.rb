@@ -1,4 +1,3 @@
-#!/usr/bin/env ruby
 def ping_pong(target_number)
   output_array = []
   x = 0
