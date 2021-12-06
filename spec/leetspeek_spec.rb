@@ -25,4 +25,16 @@ describe('String#leetspeek') do
   it('returns every "t" in a string with a "7"') do
     expect("tomato".leetspeek).to(eq("70m470"))
   end
+
+  it('returns every "s" in a string with a "z"') do
+    expect("message".leetspeek).to(eq("m3zz4g3"))
+  end
+
+  it('does NOT replace "s" with "z" if its the first letter of a word') do
+    expect("sensual".leetspeek).to(eq("s3nzu41"))
+  end
+
+  it('replaces letters correctly in a string of words') do
+    expect("I scream you scream we all scream for raspberry ice cream.".leetspeek).to(eq("I scr34m y0u scr34m w3 411 scr34m f0r r4zpb3rry ic3 cr34m."))
+  end
 end
