@@ -3,7 +3,7 @@ require('leetspeek')
 
 describe('String#leetspeek') do
   it('returns a string as is when no leetspeek rules apply') do
-    expect("crypt".leetspeek).to(eq("crypt"))
+    expect("cry".leetspeek).to(eq("cry"))
   end
 
   it('returns every "e" in a string with a "3"') do
@@ -20,5 +20,9 @@ describe('String#leetspeek') do
 
   it('returns every "o" in a string with a "0"') do
     expect("Orange".leetspeek).to(eq("0r4ng3"))
+  end
+
+  it('returns every "t" in a string with a "7"') do
+    expect("tomato".leetspeek).to(eq("70m470"))
   end
 end

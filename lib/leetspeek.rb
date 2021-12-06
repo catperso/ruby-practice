@@ -13,6 +13,8 @@ String.prepend(Module.new do
         output_array.push('1')
       elsif letter.upcase.eql?('O')
         output_array.push('0')
+      elsif letter.upcase.eql?('T')
+        output_array.push('7')
       else
         output_array.push(letter)
       end
